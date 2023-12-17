@@ -1,0 +1,122 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #aceaf9;
+    margin: 2rem;
+    border-radius: 2rem;
+    min-height: 90vh;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgb(188, 188, 188);
+}
+
+.head-area {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.head-area img {
+    width: 12rem;
+    filter: drop-shadow(5px 8px 4px rgb(83, 83, 83));
+}
+
+input.inputs:focus {
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    transform: scale(1.02);
+    box-shadow: 0 0 5px #a2a2a2;
+}
+
+button.inputs:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+input.inputs:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.inputs {
+    padding: 1rem 3.5rem;
+    margin: 0 2rem;
+    border-radius: 8px;
+    border: none;
+    background: #f3fdfd;
+    color: #898989;
+    caret-color: rgb(51, 51, 51);
+    caret: 2px black;
+}
+
+button.inputs {
+    padding: 1rem 7.8rem;
+    background: #2b2b2b;
+    color: #dadada;
+}
+
+ul.todo-holders {
+    margin-bottom: 3rem;
+}
+
+.todo-holders li {
+    list-style: none;
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-color: rgb(254, 254, 254);
+    width: 250px;
+    min-height: 45px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+p.text {
+    width: 250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+p.text:hover {
+    text-overflow: clip;
+    white-space: wrap;
+    word-break: break-word;
+}
+
+/* li:hover {
+    transform: scale(1.02);
+} */
+
+.todo-holders li::-webkit-scrollbar {
+    display: none;
+}
+
+.color-grey {
+    color: grey !important;
+}
